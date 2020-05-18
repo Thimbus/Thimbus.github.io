@@ -29,14 +29,18 @@
 
       h1 {
         color: #26282c;
-        padding: 0;
-        margin: 0;
-        font-size: 4rem;
+        font-size: 5rem;
         font-family: Amaranth, Arial, sans-serif;
         cursor: default;
       }
 
-      svg {
+      #wave {
+      	position: fixed;
+      	bottom: 0;
+      	z-index: -1;
+      }
+
+      #logo {
         animation-name: spin;
         animation-delay: 0.1s;
         animation-duration: 15s;
@@ -48,22 +52,23 @@
         from { transform: rotate(0); }
         to { transform: rotate(360deg); }
       }
-
     </style>
 
     <div class="container">
-      <svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg id="logo" width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
         <circle cx="200" cy="200" r="150" fill="#55FF99"/>
         <circle cx="167" cy="179" r="100" fill="white"/>
         <circle cx="133" cy="158" r="50" fill="#FF4848"/>
       </svg>
 
+      <div class="whitespace"></div>
+
       <h1>thimbus</h1>
 
       <div class="whitespace"></div>
-      <div class="whitespace"></div>
-
     </div>
-  </body>
 
+    <svg id="wave" viewBox="0 0 2350 850" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 516.4L139.889 451.85C279.778 387.3 559.556 258.2 839.333 279.582C1119.11 302.578 1398.89 472.022 1678.67 451.85C1958.44 431.678 2238.22 213.822 2378.11 107.718L2518 0V1161.9H2378.11C2238.22 1161.9 1958.44 1161.9 1678.67 1161.9C1398.89 1161.9 1119.11 1161.9 839.333 1161.9C559.556 1161.9 279.778 1161.9 139.889 1161.9H0V516.4Z" fill="#f5f5f5"/></svg>
+
+  </body>
 </html>
