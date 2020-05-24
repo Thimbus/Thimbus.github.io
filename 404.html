@@ -29,20 +29,27 @@
         cursor: default;
       }
 
-      a {
+      h2 {
         color: #26282c;
         font-family: Arial, sans-serif;
         cursor: pointer;
+        text-decoration: underline;
       }
 
-      a:hover {
+      h2:hover {
         color: #55FF99;
       }
     </style>
 
     <div class="container">
       <h1>Looks like you're lost.</h1>
-      <h2><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Go back</a></h2>
+      <h2>Go home</h2>
     </div>
+    
+    <script>
+      document.querySelector("h2").addEventListener("click", () => {
+        window.location = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+      });
+    </script>
   </body>
 </html>
