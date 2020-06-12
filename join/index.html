@@ -3,6 +3,9 @@
 
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="HandheldFriendly" content="true">
     <title>🍉 thimbus</title>
     <link href="https://fonts.googleapis.com/css?family=Amaranth" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Helvetica" rel="stylesheet" type="text/css">
@@ -15,10 +18,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-      }
-
-      .container {
-      	width: 60%;
       }
       
       h1 {
@@ -44,6 +43,21 @@
       .whitespace {
         width: 100%;
         height: 5vh;
+      }
+
+      .container {
+      	width: 65%;
+      }
+
+      /* Smaller screens */
+      @media screen and (max-width: 768px) {
+        .container {
+          width: 90%;
+        }
+
+        p {
+          font-size: 1em;
+        }
       }
     </style>
    
@@ -84,7 +98,7 @@
 
       <br>
 
-      <p>You can join by <a href="#">filling out this form</a>, and we'll add you in a day or so.</p>
+      <p>You can join by <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=AjcTNfK_EEK7NlXtRiOP5aIQ9EGw5vpGsxofetwSvoxUOERTWkxKOEM1R1MwSEI4VU9PTFBVM1kwQS4u">filling out this form</a>, and we'll add you in a day or so.</p>
 
       <hr>
 
